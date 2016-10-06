@@ -1,3 +1,5 @@
+My notes on [https://fronteers.nl/congres/2016](Fronteers 2016). Don't mind any spelling mistakes, and any potential misinterpretations are all mine :)
+
 # Ire Aderinokun: What About CSS? Progressive enhancement and CSS.
 
 ## Intro
@@ -7,7 +9,7 @@ Ex:
 `<noscript> You don't have JS, go change your browser! </noscript>`
 
 This has its problems:
-- Doesn't straddle technology infection points well
+- Doesn't straddle technology inflection points well
 - Many designers only test one version back: we're not making sure the site degrades gracefully for everyone
 - It does not address the different needs of different audiences. It's good for people with modern browsers, but not for edge cases.
 - It's expensive to retrofit to new alternative devices.
@@ -53,8 +55,8 @@ What are the solutions?
 - Take advantage of the cascade. Write rules and build them on top of eachother, and each rule can enhance the other. Example:
 
 div {
-  background-color: green; /* legacy
-  background-image: cool gradient stuff /* new browser
+  background-color: green; // legacy
+  background-image: cool gradient stuff; // cool new browser
 }
 
 - Adopt a mobile first strategy. Min-width based media queries > max-width. Graceful degradation things 'desktop first', whereas progressiv enhancement assumes mobile first. Start the least retricted as possible.
@@ -77,7 +79,7 @@ New feature? Always check availability first. Don't get tempted to use all new f
 =========================================================================================================================================================================
 
 # Nadieh Remer: Data Visualization
-
+This was supercool! Note to self: look into D3.js.
 
 =========================================================================================================================================================================
 
