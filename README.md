@@ -1,6 +1,6 @@
 My notes on [https://fronteers.nl/congres/2016](Fronteers 2016). Don't mind any spelling mistakes, and any potential misinterpretations are all mine :)
 
-** DAY ONE **
+**DAY ONE**
 * [Ire Aderinokun: What About CSS? Progressive enhancement and CSS.](#ire)
 * [Nadieh Remer: Data Visualization](#nadieh)
 * [G Scott Olson: How You Do What You Do Is Who You Are](#gscott)
@@ -210,4 +210,4 @@ Google's business model relies on the web, so they're working on AMP. Still not 
 
 Progressive web apps are coming and so far, businesses have had great success with PWAs. PWAs are engaging, installable and most of all, fast. This is especially important in developing countries. So maybe the web's not as dead as we thought it was.
 
-However, we can't just presume the web's going to win. We've been through this before, we have to fight to have the web survive. We can't just presume the web's going to always prosper. We always need to enhance and we're doing that in several ways: physical web/rich local discovery, fat beacons (could contain a whole web page), Flyweb, IoT, PWAs, AMP, web bluetooth API.
+However, we can't just presume the web's going to win. We've been through this before, we have to fight to have the web survive. We can't just presume the web's going to always prosper. We always need to enhance and we're doing that in several ways: physical web/rich local discovery, fat beacons (could contain a whole web page), Flyweb, IoT, PWAs, AMP, Web VR, AR, web bluetooth API. So the web still has a role to play. But the web is not just the browser. We need to start transcending web browsers. Users don't care where they see stuff, they want to get things done. A new definition: the web is any user experience that's delivered across multiple channels and devices.
