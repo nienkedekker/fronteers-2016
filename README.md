@@ -131,7 +131,11 @@ Offline-first (it's always faster to go to the local cache), progressive, multit
 
 # Martin Splitt: Multi-user WebVR or: wait, who are these people?
 
+## WebVR is pretty neat.
+
 # Lodewijk Nauta: Big Data, Big Impact
+
+## KPMG sales pitch.
 
 =========================================================================================================================================================================
 
