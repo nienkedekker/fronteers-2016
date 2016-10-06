@@ -1,18 +1,12 @@
 My notes on [https://fronteers.nl/congres/2016](Fronteers 2016). Don't mind any spelling mistakes, and any potential misinterpretations are all mine :)
 
-[Ire Aderinokun: What About CSS? Progressive enhancement and CSS.](#ire)
-
-[Nadieh Remer: Data Visualization](#nadieh)
-
-[G Scott Olson: How You Do What You Do Is Who You Are](#gscott)
-
-[Nolan Lawson: Offline, progressive, and multithreaded: a peek at the web apps of the future](#nolan)
-
-[Martin Splitt: Multi-user WebVR or: wait, who are these people?](#martin)
-
-[Lodewijk Nauta: Big Data, Big Impact](#lodewijk) 
-
-[Monika Piotrowicz: Scaling Frontend Development](#monika)
+* [Ire Aderinokun: What About CSS? Progressive enhancement and CSS.](#ire)
+* [Nadieh Remer: Data Visualization](#nadieh)
+* [G Scott Olson: How You Do What You Do Is Who You Are](#gscott)
+* [Nolan Lawson: Offline, progressive, and multithreaded: a peek at the web apps of the future](#nolan)
+* [Martin Splitt: Multi-user WebVR or: wait, who are these people?](#martin)
+* [Lodewijk Nauta: Big Data, Big Impact](#lodewijk) 
+* [Monika Piotrowicz: Scaling Frontend Development](#monika)
 
 <a name="ire"></a>
 # Ire Aderinokun: What About CSS? Progressive enhancement and CSS.
