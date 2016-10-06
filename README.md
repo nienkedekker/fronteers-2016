@@ -1,5 +1,20 @@
 My notes on [https://fronteers.nl/congres/2016](Fronteers 2016). Don't mind any spelling mistakes, and any potential misinterpretations are all mine :)
 
+[Ire Aderinokun: What About CSS? Progressive enhancement and CSS.](#ire)
+
+[Nadieh Remer: Data Visualization](#nadieh)
+
+[G Scott Olson: How You Do What You Do Is Who You Are](#gscott)
+
+[Nolan Lawson: Offline, progressive, and multithreaded: a peek at the web apps of the future](#nolan)
+
+[Martin Splitt: Multi-user WebVR or: wait, who are these people?](#martin)
+
+[Lodewijk Nauta: Big Data, Big Impact](#lodewijk) 
+
+[Monika Piotrowicz: Scaling Frontend Development](#monika)
+
+<a name="ire"></a>
 # Ire Aderinokun: What About CSS? Progressive enhancement and CSS.
 
 ## Intro
@@ -77,12 +92,12 @@ It's all about your userbase. If only 0.1 percent uses Opera Mini, it's a diffic
 New feature? Always check availability first. Don't get tempted to use all new features until it's not going to break too many things.
 
 =========================================================================================================================================================================
-
+<a name="nadieh"></a>
 # Nadieh Remer: Data Visualization
 This was supercool! Note to self: look into D3.js.
 
 =========================================================================================================================================================================
-
+<a name="gscott"></a>
 # G Scott Olson: How You Do What You Do Is Who You Are
 
 ## Intro
@@ -98,7 +113,7 @@ The source attribute is dynamically set based on the state. If there is an error
 http://daverupert.com/2012/04/uncle-daves-ol-padded-box/
 
 =========================================================================================================================================================================
-
+<a name="nolan"></a>
 # Nolan Lawson: Offline, progressive, and multithreaded: a peek at the web apps of the future
 Back then, we used Flash to make rich web experiences. HTML5 was a response to that, and it won. However, we won just in time for mobile to eat the world. On mobile, we use native apps, not websites. If you want to build a rich experience on mobile, you write a native app. In the same way HTML5 was a response to Flash, progressive web apps are a response to native mobile apps.
 
@@ -128,17 +143,17 @@ So why aren't we using web workers? According to some, the gain is pretty margin
 Offline-first (it's always faster to go to the local cache), progressive, multithreading (no jankiness). It's all about the user, that is who we're building for. And if we can build fast, responsive and robust apps that's in everyone's best interest.
 
 =========================================================================================================================================================================
-
+<a name="martin"></a>
 # Martin Splitt: Multi-user WebVR or: wait, who are these people?
 
 WebVR is pretty neat.
-
+<a name="lodewijk"></a>
 # Lodewijk Nauta: Big Data, Big Impact
 
 KPMG sales pitch.
 
 =========================================================================================================================================================================
-
+<a name="monika"></a>
 # Monika Piotrowicz: Scaling Frontend Development 
 
 ## Intro
