@@ -52,9 +52,9 @@ So, how to fix this? First, make sure the website is functional with JS. JS is e
 ## Progressive enhancement and CSS
 We have the selector, the property, and the value of the property. What happens if something goes wrong? Let's say we wanna flip an image by 180 degrees:
 
-image {
+`image {
   transform: rotate(90deg)
-}
+}`
 
 Lots of things can go wrong with selector, property and value (misspellings). Plus, a user's browser may not even support rotate. And unlike JS, we can't prepare for unsupportd features. Unlike HTML, there is no built-in fallback. This makes debugging CSS hard.
 
@@ -63,10 +63,10 @@ What are the solutions?
 - Progressive enhancement M&M: the content is the core, the presentation and client-side scripting is 'extra'.
 - Take advantage of the cascade. Write rules and build them on top of eachother, and each rule can enhance the other. Example:
 
-div {
+`div {
   background-color: green; // legacy
   background-image: cool gradient stuff; // cool new browser
-}
+}`
 
 - Adopt a mobile first strategy. Min-width based media queries > max-width. Graceful degradation things 'desktop first', whereas progressiv enhancement assumes mobile first. Start the least retricted as possible.
 - Use flexbox. It is designed to be a progressive enhancement. It's well supported.
