@@ -1,5 +1,6 @@
 My notes on [https://fronteers.nl/congres/2016](Fronteers 2016). Don't mind any spelling mistakes, and any potential misinterpretations are all mine :)
 
+** DAY ONE **
 * [Ire Aderinokun: What About CSS? Progressive enhancement and CSS.](#ire)
 * [Nadieh Remer: Data Visualization](#nadieh)
 * [G Scott Olson: How You Do What You Do Is Who You Are](#gscott)
@@ -7,6 +8,7 @@ My notes on [https://fronteers.nl/congres/2016](Fronteers 2016). Don't mind any 
 * [Martin Splitt: Multi-user WebVR or: wait, who are these people?](#martin)
 * [Lodewijk Nauta: Big Data, Big Impact](#lodewijk) 
 * [Monika Piotrowicz: Scaling Frontend Development](#monika)
+* [Peter Gasston: Surveying the Landscape](#peter)
 
 <a name="ire"></a>
 # Ire Aderinokun: What About CSS? Progressive enhancement and CSS.
@@ -177,3 +179,35 @@ Pro-tip: have more conversations! Bounce ideas off of eachother, talk about stan
 Within a large team, some people can 'own' specialties: interaction engineers, prototypers, CSS devs, performance analysts..you can have experts on certain topics, but what binds everyone is the appreciation of the HTML/CSS/JS foundation.
 
 If the team's not contributing to meaningful experiences for the end-user, it's not very useful to talk about standards. Don't optimize for the perfect codebase, optimize for making an impact (for the end-user). If growing is something you want to do, understanding what you're trying to scale is the most important question. Think critically about your craft, standards, and culture. Embrace the cracy chaotic work that is frontending!
+
+<a name="peter"></a>
+# Peter Gasston: Surveying the Landscape
+
+## Intro
+The web is at risk - it's not going to be wiped out, but there is a danger that it could become marginalized. What we're seeing is that a lot of new big popular apps don't really touch the web anymore. Twitter and Facebook were built on the web, but Instagram or Vine hardly touch the web. You can view things, but not upload them. Snapchat doesn't even acknowledge the web. Because of this a few businesses decided to go app-only. Even ChromeOS is now merging with Android.
+
+## Moving to mobile
+Selling apps is big business. Apple co-opted deeplinking to send people to apps. Even if you decide to use the website, you get told off for doing so (see: Medium). It's not a level playing field either: a story on the NYT app looks great, but terrible on web. A lot on the web page is just advertising and tracking too. Ads represent 9% of the space on a page, but account for 54% of the load time and 55% of the bandwidth. As a result, people use adblockers on the mobile web. The problem is that ads generate revenue and adblockers stop this revenue stream. Free, ad-supported webpages are no longer sustainable, as there is no money coming in.
+
+Is the web going the way of the printing press? Is having a homepage worth the cost when your content is spread over 20 different platforms? Is having an individual website DOA? Is designing a website still a growth business? Mobile has fundamentally changed the dynamics of how information is distributed. Platforms that came of age on the web, are starting to leave it behind: Facebook, Twitter.
+
+If we're all using apps and leaving the web behind, what does that mean for ownership and privacy? And what does it mean for people who are coming online just now, i.e. people from India? They're mostly on mobile, and visiting web pages costs a lot of data (= money). **1GB of data in Myanmar is 15% of the average person's monthly income!** Everyone uses prepaid, so users feel each megabyte. Facebook has a compelling advantage over other news apps: the content of many posts and news items live inside Facebok itself. And FB is very good at optimizing: FB does not waste MBs on tracking software and such. For some people in developing countries, **Facebook is the internet**. People don't see Facebook as "the internet". The amount of content that lives in FB will only increase. For us folks in developed countries that's terrifying, but it's great news for people paying a lot for data. FB's Instant Articles makes FB's attraction even bigger. FB's ads also load very fast. Result: FB in effect becomes the mobile internet. What's next: shopping and selling via FB. **Facebook has become the browser**.
+
+http://www.theatlantic.com/technology/archive/2016/01/the-facebook-loving-farmers-of-myanmar/424812/
+
+In Chine, a third of the time spent on mobile is spent on WeChat. It's unavoidable, just like the web once was. Slack is becoming a rich platform too -- allowing brands to contact you directly. There's no need to download anything or go to any URLs. Messaging apps are the new browsers. Bots are a new area that's become rather influential:
+
+http://venturebeat.com/2016/06/13/the-conversational-economy-part-1-whats-causing-the-bot-craze/
+
+Bots abstract away all the complex interfaces of the web. If apps are the new web, are bots the new web pages? And is a bot not just an API wrapper for an app?
+
+Other new technologies are Alexa, Echo and Google Home: no browser or phone even required.
+
+## It's not all bad news
+A meta platform is a platform hosted on a platform: Facebook, WeChat, Kakao, and also the web. Many of the platforms on mobile are choosing to host content within their own app and this is a direct and compelling threat to the web. 
+
+Google's business model relies on the web, so they're working on AMP. Still not 'open', but better than FB. The web is still alive and kicking - Chrome on mobile goes up in usage every year. Plus, people do use apps a lot, but only one single app, their favorite. The best way to reach new consumers is through the open web. Bots, apps, chat etc are all very popular, but most people still use a browser for say, shopping online on mobile. WeChat has supplanted the web, but it's using the web inside. It's just brought into the app and enhanced with platform features. In China, a mobile-first web page is of the utmost importance - it's just that people see these web pages through WeChat.
+
+Progressive web apps are coming and so far, businesses have had great success with PWAs. PWAs are engaging, installable and most of all, fast. This is especially important in developing countries. So maybe the web's not as dead as we thought it was.
+
+However, we can't just presume the web's going to win. We've been through this before, we have to fight to have the web survive. We can't just presume the web's going to always prosper. We always need to enhance and we're doing that in several ways: physical web/rich local discovery, fat beacons (could contain a whole web page), Flyweb, IoT, PWAs, AMP, web bluetooth API.
