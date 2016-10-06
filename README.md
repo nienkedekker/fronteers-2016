@@ -1,4 +1,4 @@
-My notes on [https://fronteers.nl/congres/2016](Fronteers 2016). Don't mind any spelling mistakes, and any potential misinterpretations are all mine :)
+My notes on [Fronteers 2016](https://fronteers.nl/congres/2016). Don't mind any spelling mistakes, and any potential misinterpretations are all mine :)
 
 **DAY ONE**
 * [Ire Aderinokun: What About CSS? Progressive enhancement and CSS.](#ire)
