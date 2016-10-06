@@ -131,12 +131,40 @@ Offline-first (it's always faster to go to the local cache), progressive, multit
 
 # Martin Splitt: Multi-user WebVR or: wait, who are these people?
 
-## WebVR is pretty neat.
+WebVR is pretty neat.
 
 # Lodewijk Nauta: Big Data, Big Impact
 
-## KPMG sales pitch.
+KPMG sales pitch.
 
 =========================================================================================================================================================================
 
 # Monika Piotrowicz: Scaling Frontend Development 
+
+## Intro
+
+Frontend does not live in a vacuum. How do you scale a team to work across multiple disciplines? At Shopify, frontend development means having a strong knowledge of HTML, CSS and JS. Frameworks come and go. The FED team sits in the middle of a spectrum: Design - FED - App Dev. This spectrum model is helpful because some people can fall inbetween (half design, half FED, or full-stack devs). What matters is that there's a group in the middle that is accountable for building the UI.
+
+## Standardisation
+So what does good frontend actually look like?
+- **Language styleguides** for HTML, CSS and JS. This is to bring order in a codebase: work as a team, not as a collective of individuals. Consistency will allow you to work faster (BEM/SMACSS, etc). A styleguide also challenges your implicit assumptions on what's good code, and which comments are useful or not. A styleguide keeps things predictable and keeps you accountable. Creating a styleguide can actually be fun and engaging for a team.
+- **Code reviews**. A lot of tools allow you to automate simple things like whitespaces and such, but every line of code should still be reviewed. If there's a rule that keeps getting broken, that's a signal that that rule is not doing what it's supposed to be doing. Review also helps you to define shared standards, share experiences, and enable discussion. Standards are impossible to apply retroactively, but new code can confirm to whatever your standards are. Some active parts of the codebase can be refactored. We're not looking for perfection, but for improvement. A wonderful side effect is that code review builds a culture of feedback and knowledge sharing: bounce ideas off people, and learn from eachother. Pair programming and whiteboarding is great for this tool.
+- **Pattern libraries**. You want to build a great, consistent interface for your app. A library of consistent UI patterns makes it possible to share code and gives a starting point for new projects. It'll create standards and conventions. Don't reinvent the wheel! Other things to consider standardising is your stack, responsive guidelines, testing standards, performance standards, accessibility (color contrasts, bulletproof HTML for form fields by using helpers), and language tooling. Having standards also allows newbies to pick up things faster.
+- **UI libraries**. For core application patterns, built in a resusable way. These are totally custom.
+
+- Making a pattern is all about finding the commonalities in components and then coming up with guidelines.
+- Sharing expertise is really important - no one knows everything but we can learn a lot from eachother.
+- "Is something a pattern?" is a good question for the Design team.
+- To actually build a pattern/create an API, and how it should be built, are questions for the dev team, with input given from FED.
+- Use API to make FED available for everyone in the company. Using APIs also allows you to edit patterns later without having to rewrite code in different places.
+- Doing all this is hard work, but it's rewarding: you solve problems at once, everyone can contribute (even if UI is not your area of expertise, you can still use a pattern), and you can use your frontend devs to build actual impactful features, not bug hunting. 
+- Teach, build, review
+
+## Building a culture
+Individuals are going to have to make choices. How and when do we experiment with new tools? When is it time to change our standards? How do you compromise and prioritize? Do you want specialists, or generalists on your team? What are the hard requirements? What's the interview process look like? 
+
+Pro-tip: have more conversations! Bounce ideas off of eachother, talk about standards, common problems, chat on Slack, get everyone together for short talks on new frontend techniques/discoveries. Use your co-workers as resources to get inspiration from. Don't forget the design and dev team here -- teach Ruby devs CSS to get appreciation for others' craft.
+
+Within a large team, some people can 'own' specialties: interaction engineers, prototypers, CSS devs, performance analysts..you can have experts on certain topics, but what binds everyone is the appreciation of the HTML/CSS/JS foundation.
+
+If the team's not contributing to meaningful experiences for the end-user, it's not very useful to talk about standards. Don't optimize for the perfect codebase, optimize for making an impact (for the end-user). If growing is something you want to do, understanding what you're trying to scale is the most important question. Think critically about your craft, standards, and culture. Embrace the cracy chaotic work that is frontending!
