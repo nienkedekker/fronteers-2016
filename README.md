@@ -13,7 +13,7 @@ My notes on [Fronteers 2016](https://fronteers.nl/congres/2016). Don't mind any 
 **DAY TWO**
 * [Peter Gasston: Surveying the Landscape](#jason)
 * [Barbara Bermes: Cheat Sheet to a Lean website](#barbara)
-
+* [Zell Liew: Building Responsive CSS Components](#zell)
 
 <a name="ire"></a>
 # Ire Aderinokun: What About CSS? Progressive enhancement and CSS.
@@ -279,3 +279,51 @@ Reduce HTTP requests: every request costs money. Concatenate where applicable, d
 https://www.smashingmagazine.com/2016/02/getting-ready-for-http2/
 
 Summary: measure and monitor constantly. Automate all the things. "Browsing should be as simple and fast as turning a page in a magazine" - Larry Page.
+
+=========================================================================================================================================================================
+<a name="zell"></a>
+# Zell Liew: Building Responsive CSS Components
+
+## Intro
+How do we make responsive components without hacky, ugly code? The moment things get messy, we're doing something wrong. We want modular and scalable components. What do these two buzzwords mean? The dictionary definition of modularity: composed of standardized units for easy construction. Kind of like Lego blocks. In web terms, a component can be a grid item, a sidebar, a header, content. We look at the following when we look at modularity:
+- Markup structure
+- CSS selectors
+- Naming convention
+- DRY
+Think BEM, SMACSS, Atomic Design. It's all about communicating with your team and deciding on standards and a modular structure.
+
+Scalability: we're not really talking about this on the web. Dictionary definition: to adjust in amount according to a fixed scale or proportion. It's quite easy to build a scalable component. But how much do we need to actually scale? To infinity and beyond? Do we need giant buttons? No, it's all proportional: upwards and downwards.
+
+Components are not in a vacuum: you have to take into account the rest of the page.
+
+## Design principles
+Principe of repetition: repetition breeds familiarity. One dot attracts attention, with a pattern of dots you don't know where to look at, you've shifted the focus.
+- Limit your number of font sizes, and repeat them. We don't need an infinite amount of scale - using the same component in three different scales is better.
+- Keep whitespace consistent.
+
+Keep visual consistency.
+Keep margin and padding consistent.
+
+Why `rem` and not `em`? An `em` is a unit of typography equal to the currently specified point-size. It's kind of hard to wrap our heads around. `rem` is equal to the unit typography size. `em` is like a local variable, `rem` is like a global variable. Global variables are usually seen as bad, but for consistent padding/margin and typography, it's very much acceptable. Size in `em` if the property scales according to its font-size. Size everything else in `rem`.
+
+The real problem comes in with breakpoints, media queries and scaling. We tend to write a lot of media queries, which is where things get complicated. We're repeating ourselves. Abstract as much as possible. A solution is element queries.
+
+https://www.sitepoint.com/beyond-media-queries-time-get-elemental/
+
+https://www.smashingmagazine.com/2016/07/how-i-ended-up-with-element-queries-and-how-you-can-use-them-today/
+
+http://elementqueries.com/
+
+> Element queries are a new way of thinking about responsive web design where the responsive conditions apply to elements on the page instead of the width or height of the browser. Unlike CSS `@media` queries, `@element` Queries are aware of more than just the width and height of the browser, you can write responsive conditions for a number of different situations like how many characters of text or child elements an element contains. Another concept that element queries brings to CSS is the idea of ‘scoping’ your styles to one element in the same way that JavaScript functions define a new scope for the variables they contain."
+
+However, this isn't valid CSS (yet) and you'll need JS polyfills for this.
+
+https://zellwk.com/blog/changing-modular-scale/
+
+## Scaling summary
+- Determine component area maps
+- Determine breakpoints and changes in styles
+- Determine units for CSS properties
+- Communication is key: scaling isn't so hard when you talk about it with your team
+- Handle complex variations with mixins or element queries, depending on the stack you're using
+- Don't over-engineer for the sake of over-engineering
