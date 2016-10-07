@@ -315,7 +315,7 @@ https://www.smashingmagazine.com/2016/07/how-i-ended-up-with-element-queries-and
 
 http://elementqueries.com/
 
-> Element queries are a new way of thinking about responsive web design where the responsive conditions apply to elements on the page instead of the width or height of the browser. Unlike CSS `@media` queries, `@element` Queries are aware of more than just the width and height of the browser, you can write responsive conditions for a number of different situations like how many characters of text or child elements an element contains. Another concept that element queries brings to CSS is the idea of ‘scoping’ your styles to one element in the same way that JavaScript functions define a new scope for the variables they contain."
+> Element queries are a new way of thinking about responsive web design where the responsive conditions apply to elements on the page instead of the width or height of the browser. Unlike CSS `@media` queries, `@element` Queries are aware of more than just the width and height of the browser, you can write responsive conditions for a number of different situations like how many characters of text or child elements an element contains. Another concept that element queries brings to CSS is the idea of ‘scoping’ your styles to one element in the same way that JavaScript functions define a new scope for the variables they contain. - http://elementqueries.com/"
 
 However, this isn't valid CSS (yet) and you'll need JS polyfills for this.
 
