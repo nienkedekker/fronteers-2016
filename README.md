@@ -16,6 +16,8 @@ My notes on [Fronteers 2016](https://fronteers.nl/congres/2016). Don't mind any 
 * [Zell Liew: Building Responsive CSS Components](#zell)
 * [Scott Helme: CSP STS PKP SRI ETC OMG WTF BBQ (Modern web security standards)](#scott)
 * [Sarah Drasner: Functional Animation](#sarah)
+* [Bruce Lawson: World-Wide Web, not Wealthy Western Web](#bruce)
+
 
 <a name="ire"></a>
 # Ire Aderinokun: What About CSS? Progressive enhancement and CSS.
@@ -409,3 +411,49 @@ You can use the (virtual) DOM, or HTML5 Canvas. The first is great for SVG that 
 People don't realize how good SVGs are. They're very well supported, plus you can always use fallbacks if you have to. They're crispon display, and there are less HTTP requests to handle. It's easily scalable for responsive, and it has a small filesize if you design for performance. SVG is good for a lot of things we used to use Flash for: it's interactive, immersive, narrative.
 
 Greensock is a powerful animation API. It solves cross-browser inconsistencies.
+=========================================================================================================================================================================
+
+<a name="bruce"></a>
+# Bruce Lawson: World-Wide Web, not Wealthy Western Web
+
+![](https://media.giphy.com/media/LXONhtCmN32YU/giphy.gif)
+
+You can't predict the unpredictable, but Asia and Africa are huge upcoming markets. It's quite likely your new customers will be from these markets. These people are usually on older devices, experiencing lots of network problems. Nevertheless, SEA is the fastest growing internet market in the world. It's a young population too, very internet savvy. And when they come online, they use a mobile device and they're mobile only. These mobile devices are not the newest devices such as the iPhone 7 - they're mostly lower end. However, they want to consume the same goods and services as people in the western world.
+
+In browser-land, developers are working on making the web work on lower-spec devices. People in emerging markets have cheaper phones with not a lot of storage, so native apps aren't very handy -- hence why browser vendors are pushing PWAs. People are unlikely to make room for native apps by deleting videos/photos. Besides storage, people in emerging markets are very data sensitive. PWAs do not have to be downloaded, which saves a lot of data. All a user downloads is a manifest file. On flaky networks, a PWA is a lot more reliable than a native app. They live on the server, so there is no update distribution lag. They require no app store, and are normal websites. They are searchable, indexable and work offline.
+
+https://pwa.rocks
+
+The technology of how things work offline is the service worker. Until now, if your web browser is disconnected from the internet there's no functionality, but with a service worker sitting in between you can give a meaningful offline experience. They also give push notifications and background sync.
+
+Using responsive images well you can save on average bytes per page. Not everyone's got great internet. If bloated images are using up people's data plan, they'll lose money.
+
+A lot of people choose to use proxy browsers: Opera Mini, Silk, Puffin, UCWEB, Chrome (Data Reduced), Opera Turbo. Opera Mini is made for feature phones because they do not have the power to render mobile web pages. It's quite a thin client, and all the hard work happens on the server (it's called Thor and is in Iceland). Thor has a hammer, and squishes down (i.e. compress) your website. This decreases average load time and page size. Mini uses less battery and data. Battery matters too - power is in short supply.
+
+Funnily enough, the servers are located outside these emerging markets. That's because the local networks are very much overloaded and flaky. Requesting a site in Cape Town will send your request all the way to the US, because that's more reliable than SA's networks.
+
+## Designing for emerging markets
+- Don't write somebody's name in red in Thailand - it means they're dead!
+- Millions of people in Indonesia have only one name. Requiring a surname disrespects them. https://www.kalzumeus.com/2010/06/17/falsehoods-programmers-believe-about-names/
+- Dealing with a proxy browser means everything happens on a server. Everything needs user interaction, everything needs a server roundtrip, and JS on page load runs for 5 seconds max.
+- JS only APIs don't work.
+- No fancy rounded CSS corners and gradients. Design will not always be preserved. Which is fine: people want the content.
+- No animations: they only show the first frame. Animations take up CPU cycles and drain battery.
+- No web fonts: they can be huge downloads and on small monochrome screens, they don't look very well.
+
+Thus: progressive enhancement is key! Make sure your site works without CSS and JS.
+
+## Demand side problems
+**Bruce's Law of Smartness™: It doesn't matter how smart your phone is if your network is dumb**
+
+The market for smartphones is declining. The average entry level smartphone is still too expensive, even if they're only 60 dollars. It's not just about affordability and networks though: a lack of awareness, digital illiteracy, and lack of locally relevant content is considered the most important barrier to internet adoption.
+
+**Windows XP is used by 9% of global computer users. To ignore these people is to ignore an entire market. Making the internet globally accessible should be a major priority.**
+
+The web empowers women by enabling them to work from home. However, internet usage of women in emerging markets is still quite low.
+
+## What can we do?
+- Progressive enhancement! Clunky is fine.
+- Feature detection
+- Compress images, use responsive images
+- Consider PWAs
