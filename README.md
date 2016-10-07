@@ -11,7 +11,7 @@ My notes on [Fronteers 2016](https://fronteers.nl/congres/2016). Don't mind any 
 * [Jason Grigsby: Adapting to Input](#jason)
 
 **DAY TWO**
-* [Peter Gasston: Surveying the Landscape](#peter)
+* [Peter Gasston: Surveying the Landscape](#jason)
 
 <a name="ire"></a>
 # Ire Aderinokun: What About CSS? Progressive enhancement and CSS.
