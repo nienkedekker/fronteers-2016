@@ -224,7 +224,7 @@ However, we can't just presume the web's going to win. We've been through this b
 ## Intro    
 Input is more complex than it used to be. The web was formless - to link between documents. It didn't require forms until we made the web commercial. Our canvas size (screen size we work with) has also changed - larger monitors, different devices, et cetera. We tricked ourselves into thinking the canvas we use is static. But if we're honest, the web never had a fixed canvas.
 
-Responsive design has changed our mindset but we're still tricking ourselves: desktop equals mouse, and phone equals touch. Desktop UI is different from mobile UI - or that's what we think. We envision desktop users as different from mobile. However, it's time to break free of these assumptions. We're thinking too binary.
+Responsive design has changed our mindset but we're still tricking ourselves: desktop equals mouse, and phone equals touch. Desktop UI is different from mobile UI - or that's what we think. We envision desktop users as different from mobile. However, it's time to break free of these assumptions. We're thinking too binary-like.
 
 ## Four truths about Input
 1. Input is exploding. In a very short period of time, we've gone from keyboard and mouse to touch, gestures, camera, voice control, and tons of other new sensors and capabilities added to our devices as new types of input.  And there's more on the way, like the Hololens (mixed reality content). It's not slowing down at all.
@@ -241,7 +241,9 @@ Responsive design has changed our mindset but we're still tricking ourselves: de
 6. Progressively enhance input. When we've got the baseline taken care of, we can actually do cool stuff with input. Examples: the Warby Parker gyroscope, Chrome's Lightsaber Escape, Webcam Toy, speech recognition API, bluetooth, web beacons.. Don't rely on it as a baseline, but use it for progressive enhancement.
 7. Make input part of your test plans. Start looking at ways to bring input in as a criteria. A device testing lab is perfect for this.
 
+https://cloudfour.com/thinks/autofill-what-web-devs-should-know-but-dont/
 http://alistapart.com/article/adapting-to-input
+https://www.sitepoint.com/pointer-events-will-make-cross-browsers-touch-support-easy/
+https://dev.opera.com/articles/media-features/
 
 Who are we to judge which input is better? For many people, typing on a virtual keyboard is faster than on a physical keyboard. We need to learn to adapt and let go of the illusions that comfort us, and face the web as it really is.
-
