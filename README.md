@@ -8,6 +8,9 @@ My notes on [Fronteers 2016](https://fronteers.nl/congres/2016). Don't mind any 
 * [Martin Splitt: Multi-user WebVR or: wait, who are these people?](#martin)
 * [Lodewijk Nauta: Big Data, Big Impact](#lodewijk) 
 * [Monika Piotrowicz: Scaling Frontend Development](#monika)
+* [Jason Grigsby: Adapting to Input](#jason)
+
+**DAY TWO**
 * [Peter Gasston: Surveying the Landscape](#peter)
 
 <a name="ire"></a>
@@ -180,6 +183,8 @@ Within a large team, some people can 'own' specialties: interaction engineers, p
 
 If the team's not contributing to meaningful experiences for the end-user, it's not very useful to talk about standards. Don't optimize for the perfect codebase, optimize for making an impact (for the end-user). If growing is something you want to do, understanding what you're trying to scale is the most important question. Think critically about your craft, standards, and culture. Embrace the cracy chaotic work that is frontending!
 
+=========================================================================================================================================================================
+
 <a name="peter"></a>
 # Peter Gasston: Surveying the Landscape
 
@@ -211,3 +216,32 @@ Google's business model relies on the web, so they're working on AMP. Still not 
 Progressive web apps are coming and so far, businesses have had great success with PWAs. PWAs are engaging, installable and most of all, fast. This is especially important in developing countries. So maybe the web's not as dead as we thought it was.
 
 However, we can't just presume the web's going to win. We've been through this before, we have to fight to have the web survive. We can't just presume the web's going to always prosper. We always need to enhance and we're doing that in several ways: physical web/rich local discovery, fat beacons (could contain a whole web page), Flyweb, IoT, PWAs, AMP, Web VR, AR, web bluetooth API. So the web still has a role to play. But the web is not just the browser. We need to start transcending web browsers. Users don't care where they see stuff, they want to get things done. A new definition: the web is any user experience that's delivered across multiple channels and devices.
+
+=========================================================================================================================================================================
+<a name="jason"></a>
+# Jason Grigsby: Adapting to input
+
+## Intro    
+Input is more complex than it used to be. The web was formless - to link between documents. It didn't require forms until we made the web commercial. Our canvas size (screen size we work with) has also changed - larger monitors, different devices, et cetera. We tricked ourselves into thinking the canvas we use is static. But if we're honest, the web never had a fixed canvas.
+
+Responsive design has changed our mindset but we're still tricking ourselves: desktop equals mouse, and phone equals touch. Desktop UI is different from mobile UI - or that's what we think. We envision desktop users as different from mobile. However, it's time to break free of these assumptions. We're thinking too binary.
+
+## Four truths about Input
+1. Input is exploding. In a very short period of time, we've gone from keyboard and mouse to touch, gestures, camera, voice control, and tons of other new sensors and capabilities added to our devices as new types of input.  And there's more on the way, like the Hololens (mixed reality content). It's not slowing down at all.
+2. Input is a continuum. We've always had phones that keyboards or styluses. Then there are laptops with touchscreens. We have a continuum we're designing for and that means we can no longer make any assumptions based on screen size or form factor.
+3. Input is undetectable. Whatever you may think, it currently isn't possible to reliably detect whether or not a device has a touch screen from within the browser. You can't detect a mouse or keyboard reliably either. Input is like Schrodingers cat: until we observe the user, we can't detect their input.
+4. Input is transient. It can be added or removed. Knowing what input is used one moment tells you nothing about what will be used next.
+
+## Adapting to input (7 recommendations)
+1. Design for the largest target by default. Minimum control sizes are different from keyboard/mouse and touch first. Fitt's Law: the time to acquire a target is a function of the distance to and size of the target. The larger the target, the easier it is to select. Design things touch first, because that, right now, is the largest target.
+2. Design for modes of interaction instead of input. You're designing for a user need, not for a specific form factor or input.
+3. Make things accessible. Building accessibly increases the likelihood of support for future, unknown inputs. Cortana/Alexa seems super new, but its voice control technology has been around for a lot longer.
+4. Design for multiple concurrent inputs. There are devices that allow you to use both touch and keyboard/mouse. Don't assume if one input is present that the person doesn't have access to other types of input.
+5. Abstract baseline input. Instead of talking about tap or click, we need to start thinking about point and select. Our language may unintentionally reinforce the ideas we have right now about input. The new pointer events spec that normalizes touch, mouse and stylus so you can just write pointer events one time.
+6. Progressively enhance input. When we've got the baseline taken care of, we can actually do cool stuff with input. Examples: the Warby Parker gyroscope, Chrome's Lightsaber Escape, Webcam Toy, speech recognition API, bluetooth, web beacons.. Don't rely on it as a baseline, but use it for progressive enhancement.
+7. Make input part of your test plans. Start looking at ways to bring input in as a criteria. A device testing lab is perfect for this.
+
+http://alistapart.com/article/adapting-to-input
+
+Who are we to judge which input is better? For many people, typing on a virtual keyboard is faster than on a physical keyboard. We need to learn to adapt and let go of the illusions that comfort us, and face the web as it really is.
+
