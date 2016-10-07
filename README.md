@@ -408,9 +408,8 @@ If state changes on your website, it's nice to join the previous and the new sta
 ## Immersive animation: when you want people to pay attention to your animation.
 You can use the (virtual) DOM, or HTML5 Canvas. The first is great for SVG that is resolution independent, and it's easier to debug. However, it tanks with a lot of objects. HTML5 Canvas does not have this drawback. It's great for impressive 3D work. The cons are it's harder to make accesible. Neither is is resolution independent out of the box.
 
-People don't realize how good SVGs are. They're very well supported, plus you can always use fallbacks if you have to. They're crispon display, and there are less HTTP requests to handle. It's easily scalable for responsive, and it has a small filesize if you design for performance. SVG is good for a lot of things we used to use Flash for: it's interactive, immersive, narrative.
+People don't realize how good SVGs are. They're very well supported, plus you can always use fallbacks if you have to. They're crispon display, and there are less HTTP requests to handle. It's easily scalable for responsive, and it has a small filesize if you design for performance. SVG is good for a lot of things we used to use Flash for: it's interactive, immersive, narrative. Greensock is a powerful animation API. It solves cross-browser inconsistencies.
 
-Greensock is a powerful animation API. It solves cross-browser inconsistencies.
 =========================================================================================================================================================================
 
 <a name="bruce"></a>
