@@ -15,7 +15,7 @@ My notes on [Fronteers 2016](https://fronteers.nl/congres/2016). Don't mind any 
 * [Barbara Bermes: Cheat Sheet to a Lean website](#barbara)
 * [Zell Liew: Building Responsive CSS Components](#zell)
 * [Scott Helme: CSP STS PKP SRI ETC OMG WTF BBQ (Modern web security standards)](#scott)
-
+* [Sarah Drasner: Functional Animation](#sarah)
 
 <a name="ire"></a>
 # Ire Aderinokun: What About CSS? Progressive enhancement and CSS.
@@ -384,3 +384,28 @@ What if you're using CDNs? They can get hacked or tampered with. SRI to the resc
 
 > Subresource Integrity (SRI) is a security feature that enables browsers to verify that files they fetch (for example, from a CDN) are delivered without unexpected manipulation. It works by allowing you to provide a cryptographic hash that a fetched file must match. - https://developer.mozilla.org/en-US/docs/Web/Security/Subresource_Integrity
 
+=========================================================================================================================================================================
+<a name="sarah"></a>
+# Sarah Drasner: Functional Animation
+
+## Intro
+When visiting a website, your eyes are never static. People try to make a mental map of what's around them. Why is that important regarding animation? Animation tends to get a bad rap - you're biologically trained to notice things in motion. If something's moving on the page, your eye is drawn to that. So when animation as a tool is used improperly, it's very distracting. Animation as a tool can be used in different ways: invisible animation versus immersive animation.
+
+
+## Invisible Animation aka UX Choreography
+If state changes on your website, it's nice to join the previous and the new state. Animation can help here. The space between doing one task and another must not be disruptive. By understanding spacial awareness we can avoid cognitive leaks for users. We want to give users a sense of space.
+
+- Modals break context (brute force UX: I want you to pay attention to this, so I'm going to shove it in your face)
+- Adhering to your branding means motion solves the problem for your users. Good animation branding means being consistent.
+- You might want to think about toggling animation on and off, especially when they're large and immersive.
+- Empower the user with animation.
+- Animation needs to be built in the core of the application - you wouldn't add colors later in the development stage, you need to take animation in account sooner.
+- Users like custom loaders, because it shows you care about them.
+- Opacity and transforms are very performant.
+
+## Immersive animation: when you want people to pay attention to your animation.
+You can use the (virtual) DOM, or HTML5 Canvas. The first is great for SVG that is resolution independent, and it's easier to debug. However, it tanks with a lot of objects. HTML5 Canvas does not have this drawback. It's great for impressive 3D work. The cons are it's harder to make accesible. Neither is is resolution independent out of the box.
+
+People don't realize how good SVGs are. They're very well supported, plus you can always use fallbacks if you have to. They're crispon display, and there are less HTTP requests to handle. It's easily scalable for responsive, and it has a small filesize if you design for performance. SVG is good for a lot of things we used to use Flash for: it's interactive, immersive, narrative.
+
+Greensock is a powerful animation API. It solves cross-browser inconsistencies.
