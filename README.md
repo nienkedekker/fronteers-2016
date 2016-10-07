@@ -242,8 +242,11 @@ Responsive design has changed our mindset but we're still tricking ourselves: de
 7. Make input part of your test plans. Start looking at ways to bring input in as a criteria. A device testing lab is perfect for this.
 
 https://cloudfour.com/thinks/autofill-what-web-devs-should-know-but-dont/
+
 http://alistapart.com/article/adapting-to-input
+
 https://www.sitepoint.com/pointer-events-will-make-cross-browsers-touch-support-easy/
+
 https://dev.opera.com/articles/media-features/
 
 Who are we to judge which input is better? For many people, typing on a virtual keyboard is faster than on a physical keyboard. We need to learn to adapt and let go of the illusions that comfort us, and face the web as it really is.
