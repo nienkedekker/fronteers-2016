@@ -12,6 +12,8 @@ My notes on [Fronteers 2016](https://fronteers.nl/congres/2016). Don't mind any 
 
 **DAY TWO**
 * [Peter Gasston: Surveying the Landscape](#jason)
+* [Barbara Bermes: Cheat Sheet to a Lean website](#barbara)
+
 
 <a name="ire"></a>
 # Ire Aderinokun: What About CSS? Progressive enhancement and CSS.
@@ -250,3 +252,30 @@ https://www.sitepoint.com/pointer-events-will-make-cross-browsers-touch-support-
 https://dev.opera.com/articles/media-features/
 
 Who are we to judge which input is better? For many people, typing on a virtual keyboard is faster than on a physical keyboard. We need to learn to adapt and let go of the illusions that comfort us, and face the web as it really is.
+
+=========================================================================================================================================================================
+<a name="barbara"></a>
+# Barbara Bermes: Cheat Sheet to a Lean website
+
+## Intro
+Fast and scalable wins the race. Why should we care about performance? It's not so much about writing beautiful fast code, it's about the business and the end user. No one likes to wait. Waiting for slow pages to load is the biggest frustration users have. In general, websites have grown in the last several years, but they've also gotten faster. But still, data is expensive, and latency continues to exist. If users are disappointed in your website's performance, chances are they won't return.
+
+One second delay = 11% fewer page views, 7% loss in conversion, 16% decrease in customer satisfaction.
+
+## Shape a performance culture
+It starts with the people who make decisions within your company. Make them aware about performance, and make them care about it. It's everyone's business, not just the developers. Don't be scared to say "no" when marketing wants to use terribly slow ads, and let them know why you're saying no. Celebrate success (website smaller and loading faster? Party!). See Etsy's performance hero idea, and their quarterly public performance report.
+
+https://twitter.com/lara_hogan/status/578295642302316546
+
+https://codeascraft.com/category/performance/
+
+## Performance = perception and respect
+The greater respect you show your users, the better it makes them feel. How long does it take your user to start interacting with your page? Treat speed as a feature. Optimize from the user's perspective: get some real user numbers, figure out what their ISP speeds are like. Your company's internet is not representative.
+
+Measure first, then optimize. Establish a performance budget - set a baseline on how fast a website should be. Compare with competitors. Barbara recommends several things to look at: speed index (the average time at which visible parts of the page are displayed), Google's Page Speed (85+ is good), Speedcurve, how the browser renders a page. Determine your critical rendering path. It's very important to know how the browser renders, in what order, so you can decide what you should display first and how you should display it.
+
+Reduce HTTP requests: every request costs money. Concatenate where applicable, don't blindly use JS libraries/frameworks, use image sprites and for small images, consider using the data URI technique to remove additional HTTP requests.
+
+https://www.smashingmagazine.com/2016/02/getting-ready-for-http2/
+
+Summary: measure and monitor constantly. Automate all the things. "Browsing should be as simple and fast as turning a page in a magazine" - Larry Page.
