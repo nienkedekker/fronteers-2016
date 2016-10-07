@@ -17,6 +17,7 @@ My notes on [Fronteers 2016](https://fronteers.nl/congres/2016). Don't mind any 
 * [Scott Helme: CSP STS PKP SRI ETC OMG WTF BBQ (Modern web security standards)](#scott)
 * [Sarah Drasner: Functional Animation](#sarah)
 * [Bruce Lawson: World-Wide Web, not Wealthy Western Web](#bruce)
+* [Léonie Watson: Technologic (Human Afterall): Accessibility Mix](#leonie)
 
 
 <a name="ire"></a>
@@ -456,3 +457,46 @@ The web empowers women by enabling them to work from home. However, internet usa
 - Feature detection
 - Compress images, use responsive images
 - Consider PWAs
+
+=========================================================================================================================================================================
+
+<a name="leonie"></a>
+# Léonie Watson: Technologic (Human Afterall): Accessibility mix
+
+## Intro
+"Buy it, use it, break it, fix it" encapsulates accessibility. You can get it "for free" by using good semantics. For example, with a link, you can include a role, an accessible name, and a state. The same is true for an image: a role (image) and an accessible name (alt tag).
+
+## Semantics
+Divs and spans are neutral, they have no role, purpose or state. Another thing you get for free with HTML is keyboard focus: it has interactive elements that receive focus by using the tab key, including: link, button, form fields. The tab order follows the DOM order of interactive elements. You also get interactive elements when using HTML in its native sense.
+
+Besides a DOM tree, there's also an accessibility tree. This is hierarchical as well. They're separate, but closely related. Assistive technologies listen for changes in the accessibility tree and respond accordingly.
+
+ARIA: accessible rich internet applications. 30+ roles including dialog, slider, toolbar, tree, tablist, all fairly typical software UI components. Allows you to add accessible names and descriptions. An ARIA element can have 9 states (checked, pressed, hidden, et cetera). ARIA is very useful when it comes to screen readers, but you'll still need to think about other assistive technologies.
+
+Add focus by using the `tabindex` attribute and JS.
+
+What was very helpful for accessibility was the separation of document structure and design - when CSS was introduced, things got a little better. Flexbox poses some problems, though:
+
+> CSS Flexbox can create a disconnect between the DOM order and visual presentation of content, causing keyboard navigation to break. For this reason, the CSS Flexible Box Layout module warns against resequencing content logic, but asking authors not to use flexbox in this way seems illogical in itself. - http://tink.uk/flexbox-the-keyboard-navigation-disconnect/.
+
+`tabindex` can partially fix this, by taking control of the keyboard sequence, but this is really hard because you'll have to resequence everything on your page. The `aria-flowto` attribute looks like another solution, but it's not viable:
+
+> The first reason aria-flowto does not solve the flexbox disconnect, is because it complicates rather than simplifies the problem. It introduces a third mode of navigation, and one that is only applicable to screen reader users (who must use specific keyboard commands to benefit from it). The second problem is that aria-flowto has extremely poor accessibility support. Of the various popular browser and screen reader combinations, only Jaws with Firefox, or Narrator with Edge and IE, has support for aria-flowto. http://tink.uk/flexbox-the-keyboard-navigation-disconnect/.
+
+There is however, a Firefox bug that realigns the tab order to match the visual order.
+
+## Tools, resources
+http://tink.uk/using-the-aria-controls-attribute/
+
+https://tenon.io/ for use with build tools
+
+https://github.com/reactjs/react-a11y
+
+https://facebook.github.io/react-native/docs/accessibility.html
+
+https://docs.angularjs.org/api/ngAria
+
+http://www.ssbbartgroup.com/blog/how-the-w3c-text-alternative-computation-works/
+
+**Test it yourself! Abandon your mouse, turn on a screen reader, zoom in and out.**
+**It doesn't have to be perfect, it has to be just a little bit better than yesterday.**
