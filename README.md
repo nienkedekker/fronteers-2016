@@ -364,6 +364,8 @@ An interesting directive is `block-all-mixed-content`. It blocks anything loaded
 
 https://report-uri.io/ 
 
+http://securityheaders.io/
+
 CSP is available in report only mode, so you can test without breaking anything.
 
 ## Strict transport security
