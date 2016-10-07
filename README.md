@@ -507,3 +507,5 @@ http://www.ssbbartgroup.com/blog/how-the-w3c-text-alternative-computation-works/
 # Heydon Pickering: Joining up the dots
 
 A random bunch of performance art. Sharks are like dogs without legs. Also related to a waldorf salad. Kanye is a wan wanker. **Meaning comes from the proximity of relations - the closer the connection is, the more relevant it is**. DIALECTICS!
+
+![](https://media.giphy.com/media/3oEjHIxD6j01Q8ZWbm/giphy.gif)
