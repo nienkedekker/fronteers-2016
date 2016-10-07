@@ -290,6 +290,7 @@ How do we make responsive components without hacky, ugly code? The moment things
 - CSS selectors
 - Naming convention
 - DRY
+
 Think BEM, SMACSS, Atomic Design. It's all about communicating with your team and deciding on standards and a modular structure.
 
 Scalability: we're not really talking about this on the web. Dictionary definition: to adjust in amount according to a fixed scale or proportion. It's quite easy to build a scalable component. But how much do we need to actually scale? To infinity and beyond? Do we need giant buttons? No, it's all proportional: upwards and downwards.
