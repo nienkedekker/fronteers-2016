@@ -183,7 +183,7 @@ Pro-tip: have more conversations! Bounce ideas off of eachother, talk about stan
 
 Within a large team, some people can 'own' specialties: interaction engineers, prototypers, CSS devs, performance analysts..you can have experts on certain topics, but what binds everyone is the appreciation of the HTML/CSS/JS foundation.
 
-If the team's not contributing to meaningful experiences for the end-user, it's not very useful to talk about standards. Don't optimize for the perfect codebase, optimize for making an impact (for the end-user). If growing is something you want to do, understanding what you're trying to scale is the most important question. Think critically about your craft, standards, and culture. Embrace the cracy chaotic work that is frontending!
+If the team's not contributing to meaningful experiences for the end-user, it's not very useful to talk about standards. Don't optimize for the perfect codebase, optimize for making an impact (for the end-user). If growing is something you want to do, understanding what you're trying to scale is the most important question. Think critically about your craft, standards, and culture. Embrace the crazy chaotic work that is frontending!
 
 =========================================================================================================================================================================
 
