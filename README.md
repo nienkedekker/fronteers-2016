@@ -14,6 +14,8 @@ My notes on [Fronteers 2016](https://fronteers.nl/congres/2016). Don't mind any 
 * [Peter Gasston: Surveying the Landscape](#jason)
 * [Barbara Bermes: Cheat Sheet to a Lean website](#barbara)
 * [Zell Liew: Building Responsive CSS Components](#zell)
+* [Scott Helme: CSP STS PKP SRI ETC OMG WTF BBQ (Modern web security standards)](#scott)
+
 
 <a name="ire"></a>
 # Ire Aderinokun: What About CSS? Progressive enhancement and CSS.
@@ -328,3 +330,55 @@ https://zellwk.com/blog/changing-modular-scale/
 - Communication is key: scaling isn't so hard when you talk about it with your team
 - Handle complex variations with mixins or element queries, depending on the stack you're using
 - Don't over-engineer for the sake of over-engineering
+
+=========================================================================================================================================================================
+<a name="scott"></a>
+# Scott Helme: CSP STS PKP SRI ETC OMG WTF BBQ (Modern web security standards)
+
+## Intro
+We don't educate people enough on security standards. We're good at creating security standards, but not good at promoting them. Security is a hard sell. How do we incentivize security?
+
+HTTP/2 comes with performance improvements (which people love), but only works over HTTPS. Other cool features, like Geolocation, getUserMedia(), AppCache, Brotli compression, can only be used over HTTPS. If you want to do all these cool things, you need to use HTTPS. You also get an SEO boost if you serve your site over a secure connection.
+
+Historically, we only focused on securing our servers. But the browser has also taken on responsibilities. We're bringing the browser on our team as well, so we can secure all the things! Browser support is pretty good - plus, if it doesn't support them, it'll just ignore them, so people with older browsers can still use your website.
+
+## Security headers
+We've got tons of security headers. CSP, PKP, STS are the most important right now.
+
+## Content security policy
+Built and created to stop content injection (XSS). Meaning someone has managed to get a malicious script tag in our page. CSP gives us the power to stop this. CSP is just a HTTP ID. The value of the header is the policy enforcing on that particular page. It has several fetch directives. A basic policy:
+
+`Content-Security-Policy: default-src 'self' example.com`
+
+It's quite a bit strong though - what about external CDNs? You can also specify `script-src` for say, Cloudflare and Google. This whitelists those domains.
+
+A nice thing about CSPs comes with mixed-content warnings. If you serve your site over HTTPS but load a font over HTTP, your browser will warn you or even refuse to load insecure content unless you explicitly allow it. This gives a pretty bad user experience.
+
+Cool examples of mixed content errors:
+
+https://mixed-script.badssl.com
+
+https://mixed.badssl.com
+
+An interesting directive is `block-all-mixed-content`. It blocks anything loaded over http without notice. The user won't get any warnings, but you'll lose the mixed content. Another interesting directive is `upgrade-insecure-requests`, because it won't block http, it'll change http to https. So you're avoiding the mixed content warning. Potential issue is that the source doesn't have https enabled.
+
+https://report-uri.io/ 
+
+CSP is available in report only mode, so you can test without breaking anything.
+
+## Strict transport security
+Fixes one of the big problems on the web. We default to insecure protocols (i.e. you type in http://twitter.com). This header tells you "no, we're using https" and sends you to https://twitter.com. Three directive: `max-age`, `includeSubDomains` and `preload`. Max-age is the only required directive (how long to cache policy). If the user types in http, the browser will override it with https for the max-age you set. This adds to performance, less redirects = more better!
+
+## Public key pinning
+Quite a difficult topic, used for ecommerce and finance websites. It fixes rogue certificates. The browsers checks three things of a certificate: the name of the site, the validity period, and if the CA is trusted. Unfortunately any CA can issue a cert. If the CA has been compromised, someone could get a hold of your cert and impersonate your website. HPKP helps resolve this.
+
+> The Public Key Pinning Extension for HTTP (HPKP) is a security feature that tells a web client to associate a specific cryptographic public key with a certain web server to prevent MITM attacks with forged certificates. - https://developer.mozilla.org/en-US/docs/Web/Security/Public_Key_Pinning
+
+Directives: pin-sha256, max-age. You must have a minimum of two pins, one is your current key, the other is an offline backup you can keep safe.
+
+https://scotthelme.co.uk/guidance-on-setting-up-hpkp/
+
+What if you're using CDNs? They can get hacked or tampered with. SRI to the rescue:
+
+> Subresource Integrity (SRI) is a security feature that enables browsers to verify that files they fetch (for example, from a CDN) are delivered without unexpected manipulation. It works by allowing you to provide a cryptographic hash that a fetched file must match. - https://developer.mozilla.org/en-US/docs/Web/Security/Subresource_Integrity
+
