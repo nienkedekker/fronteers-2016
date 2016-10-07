@@ -18,7 +18,7 @@ My notes on [Fronteers 2016](https://fronteers.nl/congres/2016). Don't mind any 
 * [Sarah Drasner: Functional Animation](#sarah)
 * [Bruce Lawson: World-Wide Web, not Wealthy Western Web](#bruce)
 * [Léonie Watson: Technologic (Human Afterall): Accessibility Mix](#leonie)
-
+* [Heydon Pickering: Joining Up The Dots](#heydon)
 
 <a name="ire"></a>
 # Ire Aderinokun: What About CSS? Progressive enhancement and CSS.
@@ -500,3 +500,10 @@ http://www.ssbbartgroup.com/blog/how-the-w3c-text-alternative-computation-works/
 
 **Test it yourself! Abandon your mouse, turn on a screen reader, zoom in and out.**
 **It doesn't have to be perfect, it has to be just a little bit better than yesterday.**
+
+=========================================================================================================================================================================
+
+<a name="heydon"></a>
+# Heydon Pickering: Joining up the dots
+
+A random bunch of performance art. Sharks are like dogs without legs. Also related to a waldorf salad. Kanye is a wan wanker. **Meaning comes from the proximity of relations - the closer the connection is, the more relevant it is**. DIALECTICS!
