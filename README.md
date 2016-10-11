@@ -2,7 +2,7 @@ My notes on [Fronteers 2016](https://fronteers.nl/congres/2016). Don't mind any 
 
 **DAY ONE**
 * [Ire Aderinokun: What About CSS? Progressive enhancement and CSS.](#ire)
-* [Nadieh Remer: Data Visualization](#nadieh)
+* [Nadieh Bremer: Data Visualization](#nadieh)
 * [G Scott Olson: How You Do What You Do Is Who You Are](#gscott)
 * [Nolan Lawson: Offline, progressive, and multithreaded: a peek at the web apps of the future](#nolan)
 * [Martin Splitt: Multi-user WebVR or: wait, who are these people?](#martin)
@@ -99,7 +99,7 @@ New feature? Always check availability first. Don't get tempted to use all new f
 
 =========================================================================================================================================================================
 <a name="nadieh"></a>
-# Nadieh Remer: Data Visualization
+# Nadieh Bremer: Data Visualization
 This was supercool! Note to self: look into D3.js.
 
 =========================================================================================================================================================================
